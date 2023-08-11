@@ -1,0 +1,36 @@
+#include<stdio.h>
+int main()
+{
+    int m;
+    scanf("%d",&m);
+    switch((m-1)/10)
+    {
+        case 8:
+        case 9:
+        printf("Fail");
+        break;
+        
+        case 7:
+        case 6:
+        printf("B");
+        break;
+        
+        case 5:
+        case 4:
+        printf("A");
+        break;
+        
+        
+        case 3:
+        case 2:
+        case 1:
+        case 0:
+        printf("D");
+        break;
+        
+        default:
+        printf("invalid");
+        break;
+}
+}
+
