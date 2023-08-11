@@ -1,0 +1,36 @@
+#include<stdio.h>
+int power (int,int);
+int length (int x)
+{
+   int c=0;
+   while(x)
+    {
+        c++;
+        x/=10;
+        
+    }
+    return c;
+}
+int main()
+{
+
+     int n,l,m,s=0;
+     scanf("%d",&n);
+     l=length(n);
+     m=n;
+    while(n)
+    {
+       s+=power(n%10,l);
+       n/=10;
+    }
+    printf(m==s ? "Armstrong":"not armstrong");
+    }
+    int power(int a,int b)
+    {
+       int s;
+       for(s=1;b--;s*=a);
+       return s;
+}
+
+
+
