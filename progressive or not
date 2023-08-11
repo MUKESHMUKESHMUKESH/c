@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main()
+{
+    int n,a,f=1;
+    scanf("%d",&n);
+    a=n%10;
+    n/=10;
+    do
+    {
+        if(a>=n%10)
+        a=n%10;
+        else
+        f=0;
+        n/=10;
+    }while(n);
+    printf(f?"progressive":"not progressive");
+}
+
